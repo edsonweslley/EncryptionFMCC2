@@ -1,5 +1,5 @@
-import SHA256
-import AES 
+from Crypto.Hash import SHA256
+from Crypto.Cipher import AES 
 import os, random, sys, pkg_resources
 
 def encrypt(key, filename):
