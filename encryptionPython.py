@@ -1,10 +1,10 @@
-from Crypto.Hash import SHA256
-from Crypto.Cipher import AES 
+import SHA256
+import AES 
 import os, random, sys, pkg_resources
 
-def encriptacao(key, filename):
+def encrypt(key, filename):
     chunksize = 64 * 1024
-    outFile = os.path.join(os.path.dirname(filename), "(Criptação)" + os.path.basename(filename))
+    outFile = os.path.join(os.path.dirname(filename), "(encrypted)" + os.path.basename(filename))
     filsesize = str(os.path.getsize(filename)).zfill(16)
     IV = ''
 
