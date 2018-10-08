@@ -1,5 +1,6 @@
+#coding: utf-8
 from Crypto.Hash import SHA256
-from Crypto.Cipher import AES 
+from Crypto.Cipher import AES
 import os, random, sys, pkg_resources
 
 def encrypt(key, filename):
